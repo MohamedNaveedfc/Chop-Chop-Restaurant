@@ -1,0 +1,175 @@
+  /* foods Brands items  */
+  .foods-content{
+    margin: 5px;
+    padding: 5px;
+    background: linear-gradient(#F75C60,#FD9A68);
+    text-align: center;
+    /* border-radius: 10px */
+    color: #F7EFED;
+    }
+  
+  .foods-items{
+    display:flex;
+    align-items: center;
+    margin: 10px auto;
+    background: linear-gradient(#FD9A68,#F75C60);
+    height: 60px;
+
+  }
+
+  .foods-items a{
+   text-align: center;
+   color:#F7EFED;
+   font-size: 20px;
+   font-weight:500;
+   text-decoration:none;
+   align-items: center;
+ }
+
+.foods-items a:hover{
+      background: #F7EFED ;
+      color:  black;
+      cursor: pointer;
+      border-radius: 5px;
+}
+.foods-content h4{
+  color:#F7EFED;
+  font-size: 20px;
+  font-weight:500;
+
+}
+#price{
+  color:#F7EFED;
+  font-size: 20px;
+  font-weight:500;
+
+}
+
+
+  #foods-varieties{
+    background: linear-gradient(#FD9A68,#F75C60);
+    height: 40px;
+    color: #F7EFED;
+    font-size: 21px;
+    font-weight: none;
+    text-decoration: none;
+    margin: 10px auto;
+
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .foods-items{
+      display: block;
+      align-items: center;
+      margin: 20px auto;
+      background:linear-gradient(#FD9A68,#F75C60);
+      padding: 20px auto;
+      height: 100%;
+    }
+    .foods-content h4{
+      color:#F7EFED;
+      font-size: 20px;
+      font-weight:500;
+
+    }
+    #price{
+      color:#F7EFED;
+      font-size: 20px;
+      font-weight:500;
+
+    }
+
+    .foods-items a:hover{
+      background: #F7EFED ;
+      color:  black;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    #foods-varieties{
+      background: linear-gradient(#FD9A68,#F75C60);
+      height: 40px;
+      color: #F7EFED;
+      font-size: 21px;
+      font-weight: none;
+      text-decoration: none;
+      margin: 20px auto;
+    }
+  }
+
+  /* end foods item */
+
+  /* Homepage brand content */
+.foods-content{
+    margin: 5px;
+    padding: 5px;
+    background: linear-gradient(#F75C60,#FD9A68);
+    text-align: center;
+    /* border-radius: 10px */
+    color: #F7EFED;
+    }
+  
+    .foods-content h3{
+      margin: 5px auto;
+      font-weight: bolder;
+    }
+  
+    .foods-content button{
+      background: #F7EFED;
+      border: 2px solid #F7EFED;
+    }
+  
+    .foods-content button:hover{
+      background: linear-gradient(#FD9A68,#F75C60);
+      border: 2px solid #F7EFED;
+      transition: 0.2s;
+    }
+  
+    .foods-content button a{
+      color: #F1485B;
+  
+    }
+  
+    .foods-content button a:hover{
+      color: #F7EFED;
+      text-decoration: none;
+    }
+  
+
+
+  #carousel{
+  margin: 30px auto 50px;
+}
+
+.picsum-img-wrapper{
+  height: 600px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .picsum-img-wrapper{
+    height: 300px;
+  }
+
+}
+.foods-content button{
+  background: #F7EFED;
+  border: 2px solid #F7EFED;
+}
+
+.foods-content button:hover{
+  background: linear-gradient(#FD9A68,#F75C60);
+  border: 2px solid #F7EFED;
+  transition: 0.2s;
+}
+
+.foods-content button a{
+  color: #F1485B;
+
+}
+
+.foods-content button a:hover{
+  color: #F7EFED;
+  text-decoration: none;
+}

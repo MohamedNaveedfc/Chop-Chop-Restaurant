@@ -1,0 +1,41 @@
+/* footer page */
+
+footer{
+    margin-top: 50px;
+    padding: 20px;
+    background: linear-gradient(#FD9A68,#F75C60);
+    color: #F7EFED;
+}
+#food{
+  display:inline-block;
+
+}
+#icon{
+  padding-bottom:6px ;
+}
+
+#icon-2{
+  padding-bottom:2px ;
+}
+@media only screen and (max-width: 768px) {
+  #food{
+    padding-left:90px;
+}
+
+  }
+
+  footer a{
+    color: #F7EFED;
+
+  }
+
+  footer a:hover{
+    text-decoration: underline;
+    color: #F7EFED;
+  }
+
+  footer h6{
+    margin: 10px auto;
+  }
+
+/* end of footer */

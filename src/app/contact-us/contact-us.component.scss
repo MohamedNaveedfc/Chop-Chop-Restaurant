@@ -1,0 +1,44 @@
+/* contact us */
+
+.map iframe{
+    margin: 50px;
+  }
+  
+  .map h6{
+    margin: 150px auto 0px;
+    font-size: 21px;
+    color: #F1485B;
+  }
+  
+  .map p{
+    font-size: 18px;
+    color: #F1485B;
+  
+  }
+  #icon{
+    padding-bottom:8px ;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .map iframe{
+      width: 100% !important;
+      margin: 30px 0px!important;
+    }
+  
+    .map h6{
+      margin: 20px 10px 5px;
+      font-size: 21px;
+      color: #F1485B;
+      text-align: center;
+  
+    }
+  
+    .map p{
+      font-size: 18px;
+      color: #F1485B;
+      margin: 0px 10px;
+      text-align: center;
+  }
+  
+  }
+  /* end contact us */
