@@ -11,7 +11,8 @@ import { MainCourseComponent } from './main-course/main-course.component';
 import { AppetizerComponent } from './appetizer/appetizer.component';
 import { DessertComponent } from './dessert/dessert.component';
 import { BeveragesComponent } from './beverages/beverages.component';
-
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TestComponent } from './test/test.component';
 
 
 
@@ -28,10 +29,11 @@ const routes: Routes = [
   { path:'signin', component:SigninComponent},
   { path:'signup', component:SignupComponent},
   { path:'book', component:BookComponent},
-  {path:'main-course',component:MainCourseComponent },
+  {path:'main-course',component:MainCourseComponent},
   {path:'appetizer' ,component:AppetizerComponent},
   {path:'dessert' ,component:DessertComponent},
-  {path:'beverages' ,component:BeveragesComponent}
+  {path:'beverages' ,component:BeveragesComponent},
+  {path:'mytest',component:TestComponent}
 
  
   
