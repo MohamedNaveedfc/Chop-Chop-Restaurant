@@ -2,25 +2,26 @@
     <div class="container" data-aos="fade-up"> 
         <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
             <div class="tab-pane fade active show" id="menu-starters">
-                    <div class="tab-header text-center">
-                        <p>Menu</p>
-                        <h3>Main Menu</h3>
-                    </div>
-                <div class="row" *ngFor="let fd of record">
+                <div class="tab-header text-center">
+                <p>Menu</p>
+                <h3>Main Menu</h3>
+                </div>
+                <div class="row gy-5">
 
-                        <div class="col-lg-4  gy-3 menu-item">
-                            <div class="right-content">
-                                <div class="image"><img src="./assets/images/menu/{{fd.images}}" class="menu-img img-fluid" alt=""></div>
-                                <h4>{{fd.pro_name}}</h4>
-                                <p class="ingredients"> {{fd.descrip}}</p>
-                                <p class="price"> {{fd.price}}</p>
-                                <span id="span">12 left on stock</span> 
-                                <form action="" method="get">
-                                    <label for="quantity">Quantity:</label>
-                                    <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
-                                        onfocus="if(this.value == '1') { this.value = ''; }" 
-                                        onBlur="if(this.value == '') { this.value = '1';}"
-                                        value="1">
+                
+                <div class="col-lg-4 menu-item" *ngFor="let test of foodvalues">
+                        <div class="right-content">
+                            <div class="image"><img  src="assets/images/menu/{{test.images}}" class="menu-img img-fluid" alt=""></div>
+                            <h4>{{test.pro_name}}</h4>
+                            <p class="ingredients"> {{test.descrip}}</p>
+                            <p class="price"> {{test.price}}</p>
+                            <span id="span">7 left on stock</span> 
+                            <form action="" method="get">
+                                <label for="quantity">Quantity:</label>
+                                <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
+                                    onfocus="if(this.value == '1') { this.value = ''; }" 
+                                    onBlur="if(this.value == '') { this.value = '1';}"
+                                    value="1">
                                     <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         Order Now!
                                     </button>    
@@ -37,12 +38,162 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>            
-                                </form>  
-                            </div>
+                                    </div>       
+                            </form>
                         </div>
-                    
-                   
+                 </div>
+                 
+                 <!--
+                 <div class="col-lg-4 menu-item">
+                    <div class="right-content">
+                        <div class="image"><img src="assets/images/menu/main-course6.webp" class="menu-img img-fluid" alt=""></div>
+                        <h4>Del Taco Crunchy Del Taco</h4>
+                        <p class="ingredients"> Del Taco is still the chain's most popular item. Recently, though, Del Taco also added a Beyond Meat taco to its mix.</p>
+                        <p class="price"> Rs.999/=</p>
+                        <span id="span">7 left on stock</span> 
+                            <form action="" method="get">
+                                <label for="quantity">Quantity:</label>
+                                <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
+                                    onfocus="if(this.value == '1') { this.value = ''; }" 
+                                    onBlur="if(this.value == '') { this.value = '1';}"
+                                    value="1">
+                                <input type="submit" class="button" value="Order Now!">
+                            </form>
+                    </div>               
+                </div>
+
+              
+
+                <div class="col-lg-4 menu-item">
+                    <div class="right-content">
+                        <div class="image"> <img src="assets/images/menu/main-course3.webp" class="menu-img img-fluid" alt=""></div>
+                        <h4>Subway Chicken & Bacon Ranch Melt</h4>
+                        <p class="ingredients"> the Subway Chicken Bacon Ranch Melt is one of Subway's most popular sandwiches mix</p>
+                        <br>
+                        <p class="price">Rs.999/=</p>
+                        <span id="span">7 left on stock</span> 
+                            <form action="" method="get">
+                                <label for="quantity">Quantity:</label>
+                                <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
+                                    onfocus="if(this.value == '1') { this.value = ''; }" 
+                                    onBlur="if(this.value == '') { this.value = '1';}"
+                                    value="1">
+                                <input type="submit" class="button" value="Order Now!">
+                            </form>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="col-lg-4 menu-item">
+                    <div class="right-content">
+                        <div class="image"><img src="assets/images/menu/main-course4.webp" class="menu-img img-fluid" alt=""></div>
+                        <h4>McAlister's Deli Club Sandwich</h4>
+                        <p class="ingredients"> The McAlister's Deli club sandwich, complete with turkey, bacon, and ham, is one of its most popular items.the sweet tea is super popular, too—you'll need something to wash that sandwich down with!</p>
+                        <p class="price"> Rs.1199/=</p>
+                        <span id="span">7 left on stock</span> 
+                            <form action="" method="get">
+                                <label for="quantity">Quantity:</label>
+                                <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
+                                    onfocus="if(this.value == '1') { this.value = ''; }" 
+                                    onBlur="if(this.value == '') { this.value = '1';}"
+                                    value="1">
+                                <input type="submit" class="button" value="Order Now!">
+                            </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 menu-item">
+                    <div class="right-content">
+                        <div class="image"><img src="assets/images/menu/main-course5.webp" class="menu-img img-fluid" alt=""></div>
+                        <h4>Moe's Southwest Grill Homewrecker</h4>
+                        <p class="ingredients"> Moe's burritos, including the Homewrecker and the Joey Bag of Donuts, reign supreme at the chain known for its warm "Those are especially favored by folks on special diets like keto/low carb/vegan "</p>
+                        <p class="price"> Rs.1299/=</p>
+                        <span id="span">7 left on stock</span> 
+                                <form action="" method="get">
+                                    <label for="quantity">Quantity:</label>
+                                    <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
+                                        onfocus="if(this.value == '1') { this.value = ''; }" 
+                                        onBlur="if(this.value == '') { this.value = '1';}"
+                                        value="1">
+                                    <input type="submit" class="button" value="Order Now!">
+                                </form>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 menu-item">
+                    <div class="right-content">
+                        <div class="image"> <img src="assets/images/menu/main-course1.webp" class="menu-img img-fluid" alt=""></div>
+                        <h4>Wisconsin Mac & Cheese</h4>
+                        <p class="ingredients"> Noodles World Kitchen Wisconsin Mac & Cheese with the addition of zucchini noodles, guests have a healthier way to enjoy this dish without sacrificing the cheesy flavor they love.</p>
+                        <p class="price"> Rs.1299/=</p>
+                        <span id="span">7 left on stock</span> 
+                            <form action="" method="get">
+                                <label for="quantity">Quantity:</label>
+                                <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
+                                    onfocus="if(this.value == '1') { this.value = ''; }" 
+                                    onBlur="if(this.value == '') { this.value = '1';}"
+                                    value="1">
+                                <input type="submit" class="button" value="Order Now!">
+                            </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 menu-item">
+                    <div class="right-content">
+                        <div class="image"><img src="assets/images/menu/main-course7.webp" class="menu-img img-fluid" alt=""></div>
+                        <h4>Subway</h4>
+                        <p class="ingredients"> Subway's turkey sub is its most popular sandwich, Specifically, the most common order is a footlong turkey sub with a bag of chips on the side.</p>
+                        <p class="price"> Rs.1399/=</p>
+                        <span id="span">7 left on stock</span> 
+                        <form action="" method="get">
+                            <label for="quantity">Quantity:</label>
+                            <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
+                                onfocus="if(this.value == '1') { this.value = ''; }" 
+                                onBlur="if(this.value == '') { this.value = '1';}"
+                                value="1">
+                            <input type="submit" class="button" value="Order Now!">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 menu-item">
+                    <div class="right-content">
+                        <div class="image"><img src="assets/images/menu/main-course9.webp" class="menu-img img-fluid" alt=""></div>
+                        <h4>Panera Flatbreads</h4>
+                        <p class="ingredients"> Panera started offering flatbread pizzas during the pandemic, and they've quickly become a fan-favorite menu option.</p>
+                        <p class="price"> Rs.999/=</p>
+                        <span id="span">7 left on stock</span> 
+                        <form action="" method="get">
+                            <label for="quantity">Quantity:</label>
+                            <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
+                                onfocus="if(this.value == '1') { this.value = ''; }" 
+                                onBlur="if(this.value == '') { this.value = '1';}"
+                                value="1">
+                            <input type="submit" class="button" value="Order Now!">
+                        </form>
+                    </div>
+                </div>
+
+                    <div class="col-lg-4 menu-item">
+                        <div class="right-content">
+                            <div class="image"><img src="assets/images/menu/main-course8.webp" class="menu-img img-fluid" alt=""></div>
+                            <h4>White Castle Sliders</h4>
+                            <p class="ingredients"> White Castle has been serving sliders since 1916, when the restaurant became America's first fast-food burger chain. Today, they remain the most popular item on the menu..</p>
+                            <p class="price"> Rs.999/=</p>
+                            <span id="span">7 left on stock</span> 
+                            <form action="" method="get">
+                                <label for="quantity">Quantity:</label>
+                                <input name="quantity" type="quantity" class="quantity-text" id="quantity" 
+                                    onfocus="if(this.value == '1') { this.value = ''; }" 
+                                    onBlur="if(this.value == '') { this.value = '1';}"
+                                    value="1">
+                                <input type="submit" class="button" value="Order Now!">
+                            </form>
+                        </div>
+                    </div>  
+                -->
                 </div>
             </div>
         </div>

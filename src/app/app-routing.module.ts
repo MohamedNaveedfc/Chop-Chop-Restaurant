@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { HomeComponent } from './home/home.component';
 import { FoodsComponent } from './foods/foods.component';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -11,8 +12,7 @@ import { MainCourseComponent } from './main-course/main-course.component';
 import { AppetizerComponent } from './appetizer/appetizer.component';
 import { DessertComponent } from './dessert/dessert.component';
 import { BeveragesComponent } from './beverages/beverages.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { TestComponent } from './test/test.component';
+
 
 
 
@@ -29,11 +29,10 @@ const routes: Routes = [
   { path:'signin', component:SigninComponent},
   { path:'signup', component:SignupComponent},
   { path:'book', component:BookComponent},
-  {path:'main-course',component:MainCourseComponent},
+  {path:'main-course/:id',component:MainCourseComponent },
   {path:'appetizer' ,component:AppetizerComponent},
   {path:'dessert' ,component:DessertComponent},
-  {path:'beverages' ,component:BeveragesComponent},
-  {path:'mytest',component:TestComponent}
+  {path:'beverages' ,component:BeveragesComponent}
 
  
   

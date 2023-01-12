@@ -1,6 +1,7 @@
-import { Component, ComponentFactoryResolver, OnInit } from '@angular/core';
-import { FoodService } from '../food.service';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { food } from '../food';
+import { FoodsService } from '../foods.service';
 
 @Component({
   selector: 'app-main-course',
@@ -9,24 +10,28 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class MainCourseComponent implements OnInit {
 
-  constructor(private foods : FoodService,private route : ActivatedRoute) { }
+  foodvalues:food[]=[];
 
-  record : any;
+  constructor(private food:FoodsService,private route:ActivatedRoute) { }
 
   ngOnInit(): void {
+    let cat_name = this.route.snapshot.paramMap.get('id');
 
-    //let category_name = this.route.snapshot.paramMap.get('');
+    alert(cat_name);
 
-    this.foods.getFoodDetails().subscribe(
-      (data: any) => {
-            console.log(data);
-
-            this.record = data;
-      }
-
+    this.food.getFoodData().subscribe(
+        (data:any)=>{
+                  alert(data);
+                  this.foodvalues = data;
+                  this.foodvalues = this.foodvalues.filter(
+                    (result:any)=>{
+                          return result.fdtype === cat_name;
+                    }
+                  );
+        }
     );
 
-
   }
+
 
 }
