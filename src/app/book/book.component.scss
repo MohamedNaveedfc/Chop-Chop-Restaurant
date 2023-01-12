@@ -2,176 +2,177 @@
 # Book A Table Section
 --------------------------------------------------------------*/
 .book-a-table .reservation-img {
-    min-height: 500px;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .book-a-table .reservation-form-bg {
-    background: rgba(55, 55, 63, 0.04);
-  }
-  
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.book-a-table .reservation-form-bg {
+  background: rgba(55, 55, 63, 0.04);
+}
+
+.book-a-table .php-email-form {
+  padding: 40px;
+}
+
+@media (max-width: 575px) {
   .book-a-table .php-email-form {
-    padding: 40px;
+    padding: 20px;
   }
-  
-  @media (max-width: 575px) {
-    .book-a-table .php-email-form {
-      padding: 20px;
-    }
-  }
-  
-  .book-a-table .php-email-form h3 {
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .book-a-table .php-email-form h4 {
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 20px 0 0 0;
-  }
-  
-  .book-a-table .php-email-form p {
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-  
-  .book-a-table .php-email-form .error-message {
-    display: none;
-    color: #fff;
-    background: #df1529;
-    text-align: left;
-    padding: 15px;
-    margin-bottom: 24px;
-    font-weight: 600;
-  }
-  
-  .book-a-table .php-email-form .sent-message {
-    display: none;
-    color: #fff;
-    background: #059652;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 24px;
-    font-weight: 600;
-  }
-  
-  .book-a-table .php-email-form .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 24px;
-  }
-  
-  .book-a-table .php-email-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid #059652;
-    border-top-color: #fff;
-    -webkit-animation: animate-loading 1s linear infinite;
-    animation: animate-loading 1s linear infinite;
-  }
-  
-  .book-a-table .php-email-form input,
-  .book-a-table .php-email-form textarea {
-    border-radius: 0;
-    box-shadow: none;
-    font-size: 14px;
-    border-radius: 0;
-  }
-  
-  .book-a-table .php-email-form input:focus,
-  .book-a-table .php-email-form textarea:focus {
-    border-color: var(--color-primary);
-  }
-  
-  .book-a-table .php-email-form input {
-    padding: 12px 15px;
-  }
-  
-  .book-a-table .php-email-form textarea {
-    padding: 12px 15px;
-  }
-  
-  .book-a-table .php-email-form button[type=submit] {
-    font-size: 15px;
-    background: linear-gradient(#FD9A68,#F75C60);
-    border: 2px#F1485B;
-    padding: 14px 60px;
-    color:white;
-    transition: 0.4s;
-    border-radius: 50px;
-  }
-  
-  
-  .book-a-table .php-email-form button[type=submit]:hover {
-      color:black;
-      background: linear-gradient(#FD9A68,#F75C60);;
-      border: 2px solid #F7EFED;
-      transition: 0.2s;
-    }
+}
 
- .btn-book-a-table {
-    font-weight: 500;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 12px 36px;
-    border-radius: 50px;
-    transition: 0.5s;
-    color: #fff;
-    background: var(--color-primary);
-    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+.book-a-table .php-email-form h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.book-a-table .php-email-form h4 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 20px 0 0 0;
+}
+
+.book-a-table .php-email-form p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.book-a-table .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #df1529;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.book-a-table .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.book-a-table .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.book-a-table .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #059652;
+  border-top-color: #fff;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.book-a-table .php-email-form input,
+.book-a-table .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.book-a-table .php-email-form input:focus,
+.book-a-table .php-email-form textarea:focus {
+  border-color: var(--color-primary);
+}
+
+.book-a-table .php-email-form input {
+  padding: 12px 15px;
+}
+
+.book-a-table .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.book-a-table .php-email-form button[type=button] {
+  font-size: 15px;
+  background: linear-gradient(#FD9A68,#F75C60);
+  border: 2px#F1485B;
+  padding: 14px 60px;
+  color:white;
+  transition: 0.4s;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+
+.book-a-table .php-email-form button[type=button]:hover {
+    color:black;
+    background: linear-gradient(#FD9A68,#F75C60);;
+    border: 2px solid #F7EFED;
+    transition: 0.2s;
   }
-  
+
+.btn-book-a-table {
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 36px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: var(--color-primary);
+  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
+}
+
 .btn-book-a-table:hover {
-    background: rgba(206, 18, 18, 0.8);
-    box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
-    
-  }
+  background: rgba(206, 18, 18, 0.8);
+  box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
+  
+}
 
-  /*--------------------------------------------------------------
+/*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
 section {
-  overflow: hidden;
-  padding: 20px 0;
+overflow: hidden;
+padding: 20px 0;
 }
 
 .section-bg {
-  background-color: #eee;
+background-color: #eee;
 }
 
 .section-header {
-  text-align: center;
-  padding-bottom: 30px;
+text-align: center;
+padding-bottom: 30px;
 }
 
 .section-header h2 {
-  font-size: 18px;
-  letter-spacing: 1px;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  color: #F1485B;
-  text-transform: uppercase;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 18px;
+letter-spacing: 1px;
+font-weight: 400;
+margin: 0;
+padding: 0;
+color: #F1485B;
+text-transform: uppercase;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .section-header p {
-  color: #F1485B  ;
-  margin: 0;
-  font-size: 48px;
-  font-weight: 400;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: #F1485B  ;
+margin: 0;
+font-size: 48px;
+font-weight: 400;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpClientModule} from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,9 +22,9 @@ import { faSun as farSun, faStar as farStar, faMoon as farMoon} from '@fortaweso
 import { faSun as fasSun, faStar as fasStar, faMoon as fasMoon } from '@fortawesome/free-solid-svg-icons';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faStackOverflow, faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TestComponent } from './test/test.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 
 @NgModule({
@@ -44,19 +43,16 @@ import { TestComponent } from './test/test.component';
     AppetizerComponent,
     DessertComponent,
     BeveragesComponent,
-    PageNotFoundComponent,
-    TestComponent,
-     
+    
+  
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule
-    
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

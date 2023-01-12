@@ -1,9 +1,9 @@
 export class food
-{   
-    id ?:number;
-    pro_name ?: string;
-    fdtype ?: string;
-    descrip ?: string;
-    images ?: string;
-    price ?: string;
+{
+    id?: number;
+    pro_name?: String;
+    fdtype?: String;
+    descrip?:String;
+    images?: String;
+    price ?: String;
 }
